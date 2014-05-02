@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Plethora of JavaScript</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" type="text/css" href="js/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<style>
+
+		 .fix-image {
+		 	border:none !important;
+		 	background:none !important;
+		 	box-shadow:none !important;
+		 }
+
+		 .underline {
+		 	text-decoration: underline;
+		 }
+
+		.larger-font {
+			font-size: 1.5em !important;
+		}
+
+		.text-left {
+			text-align: left;
+		}
+
+		.text-right {
+			text-align: right;
+		}
+
+		.special-image-layout {
+
+		}
+
+		.ui-datepicker-inline {
+			margin: 0 auto !important;
+			height: ;
+		}
+
+		.js-packery {
+			height: 100% !important;
+			width: 100% !important;
+			top: -375px;
+		}
+
+		.js-packery img {
+			margin: 0 !important;
+		}
+
+		.contacts {
+			float: left;
+		}
+
+		/* D3 Map Styles */
+		.background {
+		  fill: none;
+		  pointer-events: all;
+		}
+
+		#states {
+		  fill: #aaa;
+		}
+
+		#states .active {
+		  fill: orange;
+		}
+
+		#state-borders {
+		  fill: none;
+		  stroke: #fff;
+		  stroke-width: 1.5px;
+		  stroke-linejoin: round;
+		  stroke-linecap: round;
+		  pointer-events: none;
+		}
+
+		/* D3 bar styles */
+
+		.bar {
+		  fill: steelblue;
+		}
+
+		.bar:hover {
+		  fill: brown;
+		}
+
+		.axis {
+		  stroke: #FFF;
+		  font: 14px sans-serif;
+		  color: #FFF;
+		}
+
+		.axis path,
+		.axis line {
+		  fill: none;
+		  stroke: #FFF;
+		  shape-rendering: crispEdges;
+		}
+
+		.x.axis path {
+		  display: none;
+		}
+
+
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section>
+					<h1>Plethora of JavaScript</h1>
+					<h3>A Broad Look at the JavaScript Landscape</h3>
+				</section>
+				
+				<section class="who-am-i">
+
+					<h1>Hello</h1>
+					<ul style="display:block; text-align:center; list-style:none;">
+						<li class="fragment" style="margin-bottom: 10px;">My names is Jeff Herb!</li>
+						<li class="fragment" style="margin-bottom: 10px;">User Interfact Architect</li>
+						<li class="fragment" style="margin-bottom: 10px;">Build Interactive Components</li>
+						<li class="fragment" style="margin-bottom: 10px;">Absolutely love working with JavaScript</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<!-- Image Source: http://casivaagustin.com.ar/index.php/quien-es-dogulas/ -->
+					<img src="images/dcrockford.jpg" class="fix-image" />
+
+					<p>
+
+					</p>
+
+					<p class="fragment">
+						The Web is the most hostile software engineering environment imaginable!
+					</p>
+
+				</section>
+
+				<!-- Image Source: http://www.michaelthelin.se/wp-content/uploads/2014/02/book.jpg -->
+				<section data-background="images/books.jpg">
+				</section>
+				
+				<section>
+
+					<!-- Image source: http://arnog.github.io/ttwf/#/5 -->
+					<img src="images/web.png" class="fix-image" height="350px" width="450px" />
+
+					<!-- Image source: http://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png -->
+					<img src="images/js-logo.png" class="fix-image" height="350px" width="350px" />
+					<p>
+						The Web Development is changing!
+					</p>
+
+				</section>
+
+				<!-- Image source: http://dreamweavermenu.com/images/help/frontpage/dt-insert-menu-code.gif -->
+				<section data-background="images/dt-insert-menu-code.gif">
+
+					
+				</section>
+
+				<!-- Image source: http://www.beautiful-libraries.com/library%20photos/home%20libraries%20grand/3004.jpg -->
+				<section data-background="images/library.jpg">
+
+				</section>
+
+				<section>
+
+					<p class="fragment">
+						JavaScript libraries began to appear in the early 2000s.
+					</p>
+					<p class="fragment">
+						since then <span class="underline larger-font">literally hundreds</span> of different<br> JavaScript Libraries and Frameworks have become avaliable!
+					</p>
+
+				</section>
+
+				<!-- Image source: http://netdna.webdesignerdepot.com/uploads/2009/01/macvpc.jpg -->
+				<section>
+
+					<img src="images/macvpc.jpg" height="100%" width="100%" />
+
+				</section>
+
+				<section>
+
+					<h2>Three Primary Sections of JavaScript</h2>
+
+					<ul>
+						<li class="fragment">Libraries</li>
+						<li class="fragment">Frameworks</li>
+						<li class="fragment">Desktop/Server</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>
+						So lets take a deeper look at the wondrous world of JavaScript 
+					</h2>
+
+				</section>
+
+				<section>
+
+					<h2 class="text-left">JavaScript Libraries:</h2>
+
+					<p class="fragment">
+						a collection of highly abstracted javascript functions.
+					</p>
+
+					<p class="fragment text-left" style="margin: 30px 0;">
+						Provide developers with:
+					</p>
+
+					<ul>
+						<li class="fragment">Reusable functions</li>
+						<li class="fragment">Little or No setup headaches</li>
+						<li class="fragment">Flexibility in coding structure and interoperability*</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>JS Libraries: Reusable Functions</h2>
+
+					<pre class="fragment"><code data-trim>
+// jQuery					
+// Somthing to hide
+$('.something-to-hide').hide();
+
+// Something to show
+$('.something-to-show').show();
+					</code></pre>
+
+				</section>
+
+				<section>
+
+					<h2>JS Libraries: Little to No Setup</h2>
+
+					<p class="fragment">
+					Most of the time all you need to do is include the code on the page.
+					</p>
+
+					<pre class="fragment"><code data-trim>
+<script src="[path to script]/jQuery.min.js"></script>
+					</code></pre>
+
+				</section>
+
+				<section>
+
+					<h2>JS Libraries: Flexibility in coding</h2>
+
+					<p class="fragment">
+						Flexibility is in the placement, not the syntax
+					</p>
+
+					<pre class="fragment"><code data-trim>
+
+<script src="[path to script]/jQuery.min.js"></script>				
+
+					</code></pre>			
+
+					<pre class="fragment"><code data-trim>
+<!-- jQuery will work here -->
+<script src="[path to script]/jquery-in-file.js"></script>		
+
+<script>
+$(document).ready(function(){
+
+	//jquery will also work here.
+					
+});
+</script>
+
+					</code></pre>			
+
+				</section>
+
+				<section>
+
+					<h2>Types of Libraries</h2>
+
+					<ul>
+						<li class="fragment">DOM Manipulation</li>
+						<li class="fragment">Widget/GUI Components</li>
+						<li class="fragment">Visual/Graphics</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Libraries - DOM Manipulation</h2>
+
+					<p class="fragment">
+						Purpose: Find specific element in the DOM, Bind event to elements or adding/removing elements to/from the DOM.
+					</p>
+
+					<ul>
+						<li class="fragment">jQuery</li>
+						<li class="fragment">Zeptos</li>
+						<li class="fragment">Dojo</li>
+					</ul>
+
+				</section>
+
+				<!-- DOM Example -->
+				<section>
+
+					<pre><code data-trim>
+// Find all button element and add the click event
+$('button').on('click', function(){
+
+  // Send a message to the console to show the event worked.
+  console.log('Clicked!');
+});
+					</code></pre>
+
+				</section>
+
+				<section>
+					<h2>DOM Manipulation: Considerations</h2>
+
+					<ul>
+						<li class="fragment">How generic or opinionated are they.</li>	
+						<li class="fragment">Their syntax/learning curve</li>
+						<li class="fragment">Plugins/Extendable</li>
+					</ul>
+
+				</section>
+
+				<!-- Widget/Components -->
+				<section>
+
+					<h2>JS Libraries - Widget/GUI Components</h2>
+
+					<p class="fragment">
+						Purpose: Add pre-built components to any site or application with minumal markup on the developer side.
+					</p>
+
+					<ul>
+						<li class="fragment">jQuery UI</li>
+						<li class="fragment">Dojo toolkit</li>
+						<li class="fragment">Ext JS</li>
+					</ul>
+
+				</section>
+
+				<!-- Widget Example -->
+				<section>
+
+					<div id="datepicker"></div>
+
+					<pre class="fragment"><code data-trim>
+
+<div id="datepicker"></div>
+
+$(function() {
+  $( "#datepicker" ).datepicker();
+});
+
+					</code></pre>	
+
+				</section>
+
+				<section>
+					<h2>Widget/GUI Components: Considerations</h2>
+
+					<ul>
+						<li class="fragment">DOM Manipulation ties!</li>
+						<li class="fragment">Number of Components</li>
+						<li class="fragment">Modularity of the scripts</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Libraries - Visual/Graphics</h2>
+
+					<p class="fragment">
+						Purpse: Create interactive graphs and charts or other rich visual experiences.
+					</p>
+
+					<ul>
+						<li class="fragment">D3</li>
+						<li class="fragment">Raphael</li>
+						<li class="fragment">Kinetic</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<div id="d3bar"></div>
+
+				</section>
+
+				<section>
+
+					<div id="d3map"></div>
+
+				</section>
+
+				<section>
+
+					<h2>Visual/Graphics: Considerations</h2>
+
+					<ul>
+						<li class="fragment">Canvas vs SVG</li>
+						<li class="fragment">Data Formats</li>
+						<li class="fragment">Cost</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Libraries: Things to consider</h2>
+
+					<ul>
+						<li class="fragment">What is included and what is missing</li>
+						<li class="fragment">What is the learning curve</li>
+						<li class="fragment">What is the target medium</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2 class="text-left">JavaScript Framework/MVC:</h2>
+
+					<p class="fragment">
+						Project level design patterns and architecual guidelines.
+					</p>
+
+					<p class="fragment text-left" style="margin: 30px 0;">
+						Provide developers with*:
+					</p>
+
+					<ul>
+						<li class="fragment">File Structure Guidance</li>
+						<li class="fragment">Coding/Templating standards</li>
+						<li class="fragment">Data Binding</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h1>Wait what is an MVC</h1>
+
+				</section>
+
+				<section>
+
+					<h2>MVC is an development methodology</h2>
+
+					<img src="images/MVC.png" />
+
+				</section>
+
+				<section>
+
+					<h2>M = Model</h2>
+					<h2>V = View</h2>
+					<h2>C = Controller</h2>
+
+				</section>
+
+				<section>
+
+					<h2>JS Frameworks: File Structure</h2>
+
+					<img src="images/ember-travis-ci-1.png" />
+
+					<img src="images/ember-travis-ci-2.png" />
+
+					<img src="images/ember-travis-ci-3.png" />
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Coding/Templating Guidance</h2>
+
+					<pre class="fragment"><code data-trim>
+// Router Script
+App.Router = Ember.Router.extend({ // <-- Ceremony Start
+  root: Ember.Route.extend({
+    index: Ember.Route.extend({
+      route: '/'
+    })
+  })
+}); // <-- Ceremony End
+					</code></pre>
+
+					<pre class="fragment"><code data-trim>
+<!-- Template -->
+<ul class="users-listing">
+  {{#each user in controller}}
+    <li>{{user.name}}</li>
+  {{else}}
+    <li>no users… :-(</li>
+  {{/each}}
+</ul>
+					</code></pre>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Data Bindings</h2>
+
+					<!-- Image Source: http://vojtajina.github.io/ng-slides/2011-09-23-web-expo/#8 -->
+					<img src="images/data-binding.png" />
+
+				</section>
+
+				<section>
+
+					<h2>Most Popular JS Frameworks</h2>
+
+					<ul>
+						<li class="fragment">AngularJS</li>
+						<li class="fragment">Backbone</li>
+						<li class="fragment">Ember</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: AngularJS</h2>
+
+					<p class="fragment">
+						AngularJS is one of the oldest of the frameworks
+					</p>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: AngularJS</h2>
+
+					<p class="fragment">
+						AngularJS has a unqine perspective on how it can bind models, views and controllers together.
+					</p>
+
+					<pre class="fragment"><code data-trim>
+	Write some text in textbox:
+    <input type="text" ng-model="sometext" />
+ 
+    <h1>Hello {{ sometext }}</h1>
+					</code></pre>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: AngularJS Pro</h2>
+
+					<ul>
+						<li class="fragment">Two-way Data Binding</li>
+						<li class="fragment">Test Driven Development</li>
+						<li class="fragment">3rd-party libraries built for AngularJS</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: AngularJS Con</h2>
+
+					<ul>
+						<li class="fragment">IE8+</li>
+						<li class="fragment">Not for constant DOM Manipulation</li>
+						<li class="fragment">Somewhat of a learning curve</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Backbone</h2>
+
+					<p class="fragment">
+						Known as the super small and the Professional framework
+					</p>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Backbone</h2>
+
+					<p class="fragment">
+						The Non-opinionated framework
+					</p>
+
+					<p class="fragment">
+						If you ignore Underscore.js
+					</p>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Backbone Pro</h2>
+
+					<ul>
+						<li class="fragment">Smallest in framework size 6.5kb</li>
+						<li class="fragment">Pure MVC framework</li>
+						<li class="fragment">Maturity from simplicity</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Backbone Con</h2>
+
+					<ul>
+						<li class="fragment">No opinions, you bring everthing you want</li>
+						<li class="fragment">More initial setup</li>
+						<li class="fragment">Requires a RESTful Backend</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Ember</h2>
+
+					<p>
+						The new guy on the block; but gaining in popularity.
+					</p>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Ember</h2>
+
+					<p class="fragment">
+						Ember is the opinionated framework
+					</p>
+
+					<p class="fragment">
+						Convention over configuration!
+					</p>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Ember Pro</h2>
+
+					<ul>
+						<li class="fragment">Great for larger application</li>
+						<li class="fragment">Lots of pre-built features and componet level design</li>
+						<li class="fragment">100% Comminity Supported</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Framework: Ember Con</h2>
+
+					<ul>
+						<li class="fragment">Huge footprint at 71kb</li>
+						<li class="fragment">Very Opinionated</li>
+						<li class="fragment">Overkill for smaller apps/pages</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Frameworks: Things to consider</h2>
+
+					<ul>
+						<li class="fragment">The size of your project and its complexity</li>
+						<li class="fragment">The libraries you want to work with</li>
+						<li class="fragment">The amount of data</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>Desktop/Server JavaScript!</h2>
+
+				</section>
+
+				<section data-background="images/nodejs.png">
+
+				</section>
+
+				<section>
+
+					<!-- Image Source: http://flippinawesome.org/wp-content/uploads/2014/03/npm_header.jpg -->
+					<img src="images/npm.jpg" />
+
+				</section>
+
+				<section>
+
+					<h2 class="text-left">JavaScript Desktop/Server:</h2>
+
+
+					<p class="fragment text-left" style="margin: 30px 0;">
+						Provide developers with:
+					</p>
+
+					<ul>
+						<li class="fragment">Development Tools</li>
+						<li class="fragment">Real-Time Event Driven Web Servers/Services</li>
+					</ul>
+
+				</section>
+
+				<section>
+
+					<h2>JS Desktop/Servers: Dev Tools</h2>
+
+					<!-- Image Source: http://labs.tmw.co.uk/img/blog/kickoff-gulp-test/featured.gif -->
+					<img src="images/gruntjs.png" class="fix-image fragment" style="height:256px; width:256px;" />
+					<img src="images/bower.png" class="fix-image fragment" style="height:256px; width:256px;" />
+					<img src="images/yeoman.svg" class="fix-image fragment" style="height:256px; width:256px;" />
+
+				</section>
+
+				<section>
+
+					<h2 class="text-left">Grunt</h2>
+					<p class="fragment text-left" style="margin-bottom: 50px;">
+						The task runner and build tool - Used primarly for backend operations like minification and concatination of web assets
+					</p>
+
+					<h2 class="text-right">Bower</h2>
+					<p class="fragment text-right" style="margin-bottom: 50px;">
+						Project Dependancy management - will go out and downloads project dependancies like jQuery and D3 for you.
+					</p>
+
+					<h2 class="text-left">Yeoman</h2>
+					<p class="fragment text-left">
+						Workflow management and project scaffolding tool
+					</p>
+
+				</section>
+
+				<section>
+
+					<h2>JS Desktop/Server: Real Time Events</h2>
+
+					<img src="images/express.png" />
+
+				</section>
+
+				<section>
+
+					<img src="images/nonblocking-traditional.png" style="width:1024px; height: 768px;" class="fix-image"/>
+
+				</section>
+
+				<section>
+
+					<img src="images/nonblocking-node.png" style="width:1024px; height: 768px;" class="fix-image"/>
+
+				</section>
+
+				<section>
+
+					<img src="images/node-websockets.png" style="width:1024px; height: 768px;" class="fix-image"/>
+
+				</section>
+
+				<section>
+					<pre class="fragment"><code data-trim>
+// NPM Install Command
+npm install express
+					</code></pre>
+
+					<pre class="fragment"><code data-trim>
+var express = require('express');
+var app = express();
+app.configure(function () {
+    app.use(
+        "/", //Server URL
+        express.static(__dirname) //Site Directory Path
+    );
+});
+app.listen(3000);
+					</code></pre>
+
+				</section>
+
+				<section>
+					
+					<h1>So where do we go from here!</h1>
+
+				</section>
+
+				<section>
+
+					<h1>Resources</h1>
+
+				</section>
+
+				<section>
+
+					<!-- Books -->
+					<img src="images/books-jquery-ninja.jpg" class="fix-image" />
+
+				</section>
+
+				<section>
+
+					<img src="images/AngularJS.jpg" class="fix-image" />
+
+				</section>
+
+				<section>
+
+					<img src="images/node-the-right-way.png" class="fix-image" />
+
+				</section>
+
+				<section>
+
+					<img src="images/jsdb-io.png" class="fix-image"/>
+
+				</section>
+
+				<section>
+
+					<img src="images/todo-mvc.png" class="fix-image" />
+
+				</section>
+
+				<section>
+
+					<img src="images/javascript-weekly.png" />
+				</section>
+
+				<section>
+
+					<img src="images/node-weekly.png" />
+				</section>
+
+				<section>
+
+					<h1 class="text-right" style="margin-bottom: 300px;">Thanks!</h1>
+
+					<ul class="contacts text-left">
+						<li class="text-left">jeffrey.herb@its.ny.gov</li>
+						<li class="text-left">@herbjeff (twitter)</li>
+						<li class="text-left">JeffHerb (github)</li>
+					</ul>
+
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		
+		<script src="js/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
+		<script src="js/d3.js"></script>
+		<script src="js/d3-topo.js"></script>
+		<script src="js/packery.min.js"></script>
+
+		<!-- Setup the D3 Map -->
+
+		<script>
+			var width = 960,
+			    height = 500,
+			    centered;
+
+			var projection = d3.geo.albersUsa()
+			    .scale(1070)
+			    .translate([width / 2, height / 2]);
+
+			var path = d3.geo.path()
+			    .projection(projection);
+
+			var svg = d3.select("#d3map").append("svg")
+			    .attr("width", width)
+			    .attr("height", height);
+
+			svg.append("rect")
+			    .attr("class", "background")
+			    .attr("width", width)
+			    .attr("height", height)
+			    .on("click", clicked);
+
+			var g = svg.append("g");
+
+			d3.json("js/map.json", function(error, us) {
+			  g.append("g")
+			      .attr("id", "states")
+			    .selectAll("path")
+			      .data(topojson.feature(us, us.objects.states).features)
+			    .enter().append("path")
+			      .attr("d", path)
+			      .on("click", clicked);
+
+			  g.append("path")
+			      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+			      .attr("id", "state-borders")
+			      .attr("d", path);
+			});
+
+			function clicked(d) {
+			  var x, y, k;
+
+			  if (d && centered !== d) {
+			    var centroid = path.centroid(d);
+			    x = centroid[0];
+			    y = centroid[1];
+			    k = 4;
+			    centered = d;
+			  } else {
+			    x = width / 2;
+			    y = height / 2;
+			    k = 1;
+			    centered = null;
+			  }
+
+			  g.selectAll("path")
+			      .classed("active", centered && function(d) { return d === centered; });
+
+			  g.transition()
+			      .duration(750)
+			      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+			      .style("stroke-width", 1.5 / k + "px");
+			}
+
+		</script>
+
+		<!-- setup d3 bar graph -->
+		<script>
+
+			var margin = {top: 20, right: 20, bottom: 30, left: 40},
+			    width = 960 - margin.left - margin.right,
+			    height = 500 - margin.top - margin.bottom;
+
+			var x = d3.scale.ordinal()
+			    .rangeRoundBands([0, width], .1);
+
+			var y = d3.scale.linear()
+			    .range([height, 0]);
+
+			var xAxis = d3.svg.axis()
+			    .scale(x)
+			    .orient("bottom");
+
+			var yAxis = d3.svg.axis()
+			    .scale(y)
+			    .orient("left")
+			    .ticks(10, "%");
+
+			var svg = d3.select("#d3bar").append("svg")
+			    .attr("width", width + margin.left + margin.right)
+			    .attr("height", height + margin.top + margin.bottom)
+			  .append("g")
+			    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+			d3.tsv("js/data.tsv", type, function(error, data) {
+			  x.domain(data.map(function(d) { return d.letter; }));
+			  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+
+			  svg.append("g")
+			      .attr("class", "x axis")
+			      .attr("transform", "translate(0," + height + ")")
+			      .call(xAxis);
+
+			  svg.append("g")
+			      .attr("class", "y axis")
+			      .call(yAxis)
+			    .append("text")
+			      .attr("transform", "rotate(-90)")
+			      .attr("y", 6)
+			      .attr("dy", ".71em")
+			      .style("text-anchor", "end")
+			      .text("Frequency");
+
+			  svg.selectAll(".bar")
+			      .data(data)
+			    .enter().append("rect")
+			      .attr("class", "bar")
+			      .attr("x", function(d) { return x(d.letter); })
+			      .attr("width", x.rangeBand())
+			      .attr("y", function(d) { return y(d.frequency); })
+			      .attr("height", function(d) { return height - y(d.frequency); });
+
+			});
+
+			function type(d) {
+			  d.frequency = +d.frequency;
+			  return d;
+			}
+
+		</script>
+
+		<script>
+  			$(function() {
+    			$( "#datepicker" ).datepicker();
+  			});
+  		</script>
+
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'socket.io/socket.io.js', async: true },
+        			{ src: 'plugin/notes-server/client.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+
+</html>
